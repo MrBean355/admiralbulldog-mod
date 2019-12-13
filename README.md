@@ -25,16 +25,16 @@ If you're experiencing issues with your game, you can deactivate the mod:
 2. Delete the `admiralbulldog` folder from your Dota folder.
 
 ## Implemented Sounds
-- Beastmaster - [Primal Roar](original%20samples/awoo.wav)
-- Crystal Maiden - [Freezing Field](original%20samples/Raaaaahh.wav)
-- Earthshaker - [Echo Slam](original%20samples/skadoosh.wav)
-- Kunkka - [X Marks the Spot](original%20samples/sike.wav) & [Ghost Ship](original%20samples/aaah%20x3.wav)
-- Naga Siren - [Song of the Siren](original%20samples/naga%20song.wav)
-- Nature's Prophet - [Teleportation](original%20samples/seeya.wav)
-- Witch Doctor - [Death Ward](original%20samples/Witch%20Doctor%20Song%20Short.wav)
+- Beastmaster - Primal Roar
+- Crystal Maiden - Freezing Field
+- Earthshaker - Echo Slam
+- Enigma - Black Hole
+- Kunkka - X Marks the Spot & Ghost Ship
+- Naga Siren - Song of the Siren
+- Nature's Prophet - Teleportation
+- Witch Doctor - Death Ward
 
 ## To Be Done
-- Enigma - Black Hole (where to find the original?)
 - Juggernaut - Blade Fury (where to find the original?)
 - Queen of Pain - Sonic Wave (where to find the original?)
 - Chat Wheel (I don't have Dota Plus):
