@@ -1,0 +1,12 @@
+
+Beastmaster Ult     - default sound + "awoo" PlaySound
+Crystal Maiden Ult  - https://youtu.be/EQevdfr2Kqk?t=565
+Earthshaker Ult     - "skadoosh" PlaySound
+Enigma Ult          - default sound + https://youtu.be/kHhtOrZ6qrs?t=141
+Nature's Prophet TP - "seeya" PlaySound
+Kunkka X-marks      - "sike" PlaySound
+Kunkka Ult          - "aaah" PlaySound
+Naga Siren Ult      - https://youtu.be/8Rq0Gg6PEac?t=169
+Witch Doctor Ult    - default sound + https://youtu.be/HmZYgqBp1gI
+
+PlaySounds page: https://chatbot.admiralbulldog.live/playsounds
