@@ -1,0 +1,6 @@
+<root>
+  <Panel class="AddonLoadingRoot">
+      <Image id="gamemode" class="SeqImg" src="file://{images}/hud/reborn/statbranch_button_bg.png" />
+      <Image id="gamemode" class="SeqImg" src="file://{images}/hud/voiceicon_loud.png" />
+  </Panel>
+</root>
