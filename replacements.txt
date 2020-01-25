@@ -1,0 +1,52 @@
+# Items
+Hand of Midas  = GorpPidas
+Black King Bar = sadKEK Bar
+
+# Heroes
+The Ancient Apparition = Ronnie Coleman                # The Ancient Apparition's eternal knowledge ...
+Ancient Apparition     = Ronnie Coleman
+Treant Protectors      = Trent Protector of Minorities # The roots and tendrils of the Treant Protectors are ...
+Treant Protector       = Trent Protector of Minorities
+
+# General
+!Game is paused           = ResidentSleeper
+!tipped %s1. Well Played! = tipped %s1. Git gud scrub sadKEK
+!Grants bonus Gold.       = DA ROONS haHAA
+
+# Post-game survey, positive
+!Absolutely!            = Yes Pog
+!Good Team Coordination = I got carried by the team but won't admit it
+!Close Game             = Close Game SmileyFace
+!Friendly Teammates     = Team was berry nice, berry cool
+!I Played Well          = Shit team but I carried :)
+!Good Hero Choices      = WeSmart Hero Choices
+!We made a comeback     = We (I) made (carried) a comeback
+
+# Post-game survey, negative
+!Not so much.                = N OMEGALUL
+!Poor Team Coordination      = Shit team and I didn't carry
+!Game was a Stomp            = We got fucken rekt
+!Toxic Behavior              = Toxic Behavior D:
+!Wasn't able to play my Hero = Mom, he stole my hero BabyRage!
+!Bad Draft                   = WTF are those picks?!
+!Smurf in the Game           = BabyRage smurfs man!
+
+# Server locations
+!US West      = KKona West
+!US East      = KKona East
+!Luxembourg   = DatSheffy Luxembourg
+!Singapore    = MingLee Singapore
+!Stockholm    = ANELE Stockholm
+!Austria      = DatSheffy Austria
+!Brazil       = Laden Brazil
+!Australia    = KKrikey Australia
+!South Africa = TriEasy South Africa
+!Dubai        = ANELE Dubai
+!India        = ANELE India
+!Russia       = KKomrade Russia
+
+# Chat wheel
+!Frog           = Bruh
+!Crash          = Ohnonono
+!Crash and burn = Ohnonono PepeLaugh
+!Crybaby        = BabyRage

@@ -1,1 +1,8 @@
+.idea/
+.gradle/
+build/
+out/
+local.properties
+
 pak01_dir.vpk
+pak01_dir.vpk.sha512
