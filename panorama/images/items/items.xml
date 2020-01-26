@@ -2,5 +2,6 @@
   <Panel class="AddonLoadingRoot">
       <Image id="gamemode" class="SeqImg" src="file://{images}/items/black_king_bar.png" />
       <Image id="gamemode" class="SeqImg" src="file://{images}/items/hand_of_midas.png" />
+      <Image id="gamemode" class="SeqImg" src="file://{images}/items/enchanted_mango.png"/>
   </Panel>
 </root>

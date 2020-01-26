@@ -1,6 +1,7 @@
 # Items
 Hand of Midas  = GorpPidas
 Black King Bar = sadKEK Bar
+Mango          = FatMango
 
 # Heroes
 The Ancient Apparition = Ronnie Coleman                # The Ancient Apparition's eternal knowledge ...
