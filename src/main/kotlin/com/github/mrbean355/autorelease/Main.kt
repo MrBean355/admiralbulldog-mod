@@ -54,6 +54,7 @@ fun main(args: Array<String>) {
     // Compile the VPK
     runCommand("compile\\vpk compile\\pak01_dir")
     File("compile\\pak01_dir.vpk").moveTo("pak01_dir.vpk")
+    File("pak01_dir.vpk.sha512").writeText(File("pak01_dir.vpk").checksum())
 
     // Clean up
     stagingDir.deleteRecursively()
@@ -140,7 +141,6 @@ private fun uploadReleaseAssets(releaseId: Long) {
     // Upload checksum
     println("Uploading checksum asset...")
     val checksum = File("pak01_dir.vpk.sha512")
-    checksum.writeText(vpk.checksum())
     val checksumResponse = service.uploadReleaseAsset(
             auth = "Bearer $GITHUB_AUTH_TOKEN",
             releaseId = releaseId,
