@@ -1,3 +1,11 @@
+########################################################################################################################
+# Start with '!' -> replace values that match the LHS exactly with the RHS.
+# Start with '@' -> replace the value with the key of LHS with the RHS.
+# Otherwise      -> replace all occurrences of LHS with RHS in values.
+#
+# Contains   '#' -> comment; ignore the rest of the line.
+########################################################################################################################
+
 # Items
 Hand of Midas  = GorpPidas
 Black King Bar = sadKEK Bar
@@ -10,6 +18,12 @@ Treant Protectors      = Trent Protector of Minorities # The roots and tendrils 
 Treant Protector       = Trent Protector of Minorities
 
 # General
+@dota_play                = Dota sadKEK
+@DOTA_FindMatch           = Find Scrubs
+@dota_play_searching      = Finding Scrubs
+@DOTA_Friends_WindowTitle = HIRED FRIENDS
+@DOTA_MonthlyPlayersLabel = Unique Feeders in the Last Month
+@DOTA_CurrentPlayersLabel = Feeders In Game Now
 !Game is paused           = ResidentSleeper
 !tipped %s1. Well Played! = tipped %s1. Git gud scrub sadKEK
 !Grants bonus Gold.       = DA ROONS haHAA

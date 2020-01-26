@@ -18,11 +18,13 @@ private val CHARSET = Charsets.UTF_16LE
 // Symbols used in the replacements.txt file:
 private const val SEPARATOR = '='
 private const val EXACT_REPLACE = '!'
+private const val SINGLE_REPLACE = '@'
 private const val COMMENT = '#'
 
 object Replacements {
     private val containsReplacements = mutableMapOf<String, String>()
     private val exactReplacements = mutableMapOf<String, String>()
+    private val singleReplacements = mutableMapOf<String, String>()
 
     init {
         loadReplacements()
@@ -37,14 +39,16 @@ object Replacements {
             if (match == null) {
                 output.append(line + "\n")
             } else {
+                val key = match.groupValues[1]
                 val oldValue = match.groupValues[2]
                 var newValue = oldValue
-                val exactReplacement = exactReplacements[oldValue]
-                if (exactReplacement != null) {
-                    newValue = exactReplacement
-                } else {
-                    containsReplacements.forEach { (k, v) ->
-                        newValue = newValue.replace(k, v, ignoreCase = true)
+                when {
+                    key in singleReplacements -> newValue = singleReplacements[key]!!
+                    oldValue in exactReplacements -> newValue = exactReplacements[oldValue]!!
+                    else -> {
+                        containsReplacements.forEach { (k, v) ->
+                            newValue = newValue.replace(k, v, ignoreCase = true)
+                        }
                     }
                 }
                 output.append(line.replace("\"$oldValue\"", "\"$newValue\"") + "\n")
@@ -68,10 +72,10 @@ object Replacements {
                     require(parts.size == 2) { "Invalid syntax: $line" }
                     val key = parts.first().trim()
                     val value = parts[1].trim()
-                    if (key.startsWith(EXACT_REPLACE)) {
-                        exactReplacements += key.drop(1) to value
-                    } else {
-                        containsReplacements += key to value
+                    when {
+                        key.startsWith(EXACT_REPLACE) -> exactReplacements += key.drop(1) to value
+                        key.startsWith(SINGLE_REPLACE) -> singleReplacements += key.drop(1) to value
+                        else -> containsReplacements += key to value
                     }
                 }
     }
