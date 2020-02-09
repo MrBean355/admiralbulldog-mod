@@ -54,45 +54,40 @@ fun main(args: Array<String>) {
     // Compile the VPK
     runCommand("compile\\vpk compile\\pak01_dir")
     File("compile\\pak01_dir.vpk").moveTo("pak01_dir.vpk")
+    File("pak01_dir.vpk.sha512").writeText(File("pak01_dir.vpk").checksum())
 
     // Clean up
     stagingDir.deleteRecursively()
     File(COMPILER_OUTPUT).deleteRecursively()
 
     // VCS
-    print("Getting latest release info... ")
-    val latestReleaseResponse = service.getLatestRelease().execute()
-    val latestReleaseBody = latestReleaseResponse.body()
-    if (!latestReleaseResponse.isSuccessful || latestReleaseBody == null) {
-        println("error: $latestReleaseBody")
-        exitProcess(-1)
-    }
-
-    require(latestReleaseBody.tagName.startsWith('v')) { "Unexpected tag format: ${latestReleaseBody.tagName}" }
-    val latestVersion = Semver(latestReleaseBody.tagName.drop(1))
-    println(latestVersion)
-    val nextVersion = latestVersion.withIncPatch()
-
-    commitAndPush(nextVersion)
+    val nextVersion = commitAndPush()
     publishReleaseToGitHub(nextVersion)
 
     println("Done!")
 }
 
-private fun commitAndPush(nextVersion: Semver) {
-    println("Committing, tagging & pushing...")
-    val previousCommit = runCommand("git rev-parse HEAD").second
+private fun commitAndPush(): Semver {
+    println("Checking out latest master...")
     runCommand("git checkout master")
     runCommand("git pull")
+
+    val previousCommit = runCommand("git rev-parse HEAD").second
     runCommand("git reset")
     runCommand("git add resource/localization/*")
     runCommand("git commit -m \"Merge in latest strings\"", allowedExitCodes = listOf(0, 1))
 
     val currentCommit = runCommand("git rev-parse HEAD").second
+    println("Previous commit: $previousCommit")
+    println("Current commit:  $currentCommit")
+
     if (previousCommit == currentCommit) {
-        println("No changes committed; done!")
+        println("No changes detected; done!")
         exitProcess(status = 0)
     }
+
+    println("Changes detected; pushing & tagging...")
+    val nextVersion = getNextVersion()
 
     runCommand("git push")
 
@@ -103,6 +98,23 @@ private fun commitAndPush(nextVersion: Semver) {
 
     runCommand("git push")
     runCommand("git push --tags")
+
+    return nextVersion
+}
+
+private fun getNextVersion(): Semver {
+    print("Getting latest release info... ")
+    val latestReleaseResponse = service.getLatestRelease().execute()
+    val latestReleaseBody = latestReleaseResponse.body()
+    if (!latestReleaseResponse.isSuccessful || latestReleaseBody == null) {
+        println("\terror: $latestReleaseBody")
+        exitProcess(-1)
+    }
+
+    require(latestReleaseBody.tagName.startsWith('v')) { "Unexpected tag format: ${latestReleaseBody.tagName}" }
+    val latestVersion = Semver(latestReleaseBody.tagName.drop(1))
+    println(latestVersion)
+    return latestVersion.withIncPatch()
 }
 
 private fun publishReleaseToGitHub(nextVersion: Semver) {
@@ -140,7 +152,6 @@ private fun uploadReleaseAssets(releaseId: Long) {
     // Upload checksum
     println("Uploading checksum asset...")
     val checksum = File("pak01_dir.vpk.sha512")
-    checksum.writeText(vpk.checksum())
     val checksumResponse = service.uploadReleaseAsset(
             auth = "Bearer $GITHUB_AUTH_TOKEN",
             releaseId = releaseId,
