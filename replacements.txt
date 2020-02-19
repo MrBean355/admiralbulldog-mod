@@ -65,3 +65,4 @@ Treant Protector       = Trent Protector of Minorities
 !Crash          = Ohnonono
 !Crash and burn = Ohnonono PepeLaugh
 !Crybaby        = BabyRage
+!Kiss           = Fuck you
