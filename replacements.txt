@@ -28,6 +28,8 @@ Treant Protector       = Trent Protector of Minorities
 !Game is paused           = ResidentSleeper
 !tipped %s1. Well Played! = tipped %s1. Git gud scrub sadKEK
 !Grants bonus Gold.       = DA ROONS haHAA
+invulnerable              = ungillable
+Invulnerable              = Ungillable
 
 # Post-game survey, positive
 !Absolutely!            = Yes Pog
