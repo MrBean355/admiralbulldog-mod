@@ -10,6 +10,7 @@
 Hand of Midas  = GorpPidas
 Black King Bar = sadKEK Bar
 Mango          = FatMango
+mango          = FatMango
 
 # Heroes
 The Ancient Apparition = Ronnie Coleman                # The Ancient Apparition's eternal knowledge ...
@@ -27,6 +28,8 @@ Treant Protector       = Trent Protector of Minorities
 !Game is paused           = ResidentSleeper
 !tipped %s1. Well Played! = tipped %s1. Git gud scrub sadKEK
 !Grants bonus Gold.       = DA ROONS haHAA
+invulnerable              = ungillable
+Invulnerable              = Ungillable
 
 # Post-game survey, positive
 !Absolutely!            = Yes Pog
@@ -47,18 +50,28 @@ Treant Protector       = Trent Protector of Minorities
 !Smurf in the Game           = BabyRage smurfs man!
 
 # Server locations
-!US West      = KKona West
-!US East      = KKona East
-!Luxembourg   = DatSheffy Luxembourg
-!Singapore    = MingLee Singapore
-!Stockholm    = ANELE Stockholm
-!Austria      = DatSheffy Austria
-!Brazil       = Laden Brazil
-!Australia    = KKrikey Australia
-!South Africa = TriEasy South Africa
-!Dubai        = ANELE Dubai
-!India        = ANELE India
-!Russia       = KKomrade Russia
+!US West               = KKona West
+!US East               = KKona East
+!Luxembourg            = DatSheffy Luxembourg
+!Singapore             = MingLee Singapore
+!Stockholm             = ANELE Stockholm
+!Austria               = DatSheffy Austria
+!Brazil                = Laden Brazil
+!South America         = Laden SA
+!Australia             = KKrikey
+!South Africa          = TriEasy South Africa
+!Dubai                 = ANELE Dubai
+!India                 = ANELE India
+!Russia                = KKomrade
+!Perfect World (China) = Perfect World (MingLUL)
+!China TC              = MingLUL TC
+!China TC Shanghai     = MingLUL TC Shanghai
+!China TC Guangdong    = MingLUL TC Guangdong
+!China TC Zhejiang     = MingLUL TC Zhejiang
+!China TC Wuhan        = MingLUL TC Wuhan
+!China UC              = MingLUL UC
+!China UC 2            = MingLUL UC 2
+!China                 = MingLUL
 
 # Chat wheel
 !Frog           = Bruh
