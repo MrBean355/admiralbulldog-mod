@@ -7,10 +7,11 @@
 ########################################################################################################################
 
 # Items
-Hand of Midas  = GorpPidas
-Black King Bar = sadKEK Bar
-Mango          = FatMango
-mango          = FatMango
+Hand of Midas   = GorpPidas
+Black King Bar  = sadKEK Bar
+Mango           = FatMango
+mango           = FatMango
+Mask of Madness = Mask of Maldness
 
 # Heroes
 The Ancient Apparition = Ronnie Coleman                # The Ancient Apparition's eternal knowledge ...
