@@ -7,6 +7,7 @@ Nature's Prophet TP - "seeya" PlaySound
 Kunkka X-marks      - "sike" PlaySound
 Kunkka Ult          - "aaah" PlaySound
 Naga Siren Ult      - https://youtu.be/8Rq0Gg6PEac?t=169
+Queen of Pain Ult   - https://youtu.be/OlOy9zjIdmc?t=26
 Witch Doctor Ult    - default sound + https://youtu.be/HmZYgqBp1gI
 
 PlaySounds page: https://chatbot.admiralbulldog.live/playsounds
