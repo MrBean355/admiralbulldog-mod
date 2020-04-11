@@ -32,6 +32,15 @@ Treant Protector       = Trent Protector of Minorities
 invulnerable              = ungillable
 Invulnerable              = Ungillable
 
+# Leave Dialog
+@dota_abandon_dialog_title   = BabyRage
+@dota_abandon_dialog_confirm = FatMald Are you sure you want to abandon this game? FatMald
+@dota_abandon_dialog_yes     = Yes, get me out FatMald
+
+@dota_leave_dialog_title   = BabyRage
+@dota_leave_dialog_confirm = FatMald Are you sure you want to leave this game? FatMald
+@dota_leave_dialog_yes     = Yes, get me out FatMald
+
 # Post-game survey, positive
 !Absolutely!            = Yes Pog
 !Good Team Coordination = I got carried by the team but won't admit it
