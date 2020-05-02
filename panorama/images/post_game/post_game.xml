@@ -1,0 +1,6 @@
+<root>
+  <Panel class="AddonLoadingRoot">
+      <Image id="gamemode" class="SeqImg" src="file://{images}/post_game/negative_icon.png" />
+      <Image id="gamemode" class="SeqImg" src="file://{images}/post_game/positive_icon.png" />
+  </Panel>
+</root>
