@@ -10,5 +10,6 @@
       <Image id="gamemode" class="SeqImg" src="file://{images}/items/dagon_5.png"/>
       <Image id="gamemode" class="SeqImg" src="file://{images}/items/mango_tree.png"/>
       <Image id="gamemode" class="SeqImg" src="file://{images}/items/mask_of_madness.png"/>
+      <Image id="gamemode" class="SeqImg" src="file://{images}/items/sheepstick.png"/>
   </Panel>
 </root>
