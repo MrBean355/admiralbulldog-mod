@@ -22,6 +22,7 @@ Treant Protectors      = Trent Protector of Minorities # The roots and tendrils 
 Treant Protector       = Trent Protector of Minorities
 
 # Abilities
+Death Ward        = ZULUL Ward
 Song of the Siren = FatSing
 
 # General
