@@ -1,9 +1,0 @@
-<root>
-  <Panel class="AddonLoadingRoot">
-      <Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_dazzle.png" />
-      <Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_earthshaker.png" />
-      <Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_puck.png" />
-      <Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_pudge.png" />
-      <Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_sniper.png" />
-  </Panel>
-</root>
