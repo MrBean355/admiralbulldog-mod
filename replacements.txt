@@ -21,6 +21,13 @@ Ancient Apparition     = Ronnie Coleman
 Treant Protectors      = Trent Protector of Minorities # The roots and tendrils of the Treant Protectors are ...
 Treant Protector       = Trent Protector of Minorities
 
+# Abilities
+Death Ward        = ZULUL Ward
+Echo Slams        = Skadooshes
+Echo Slam         = Skadoosh
+Primal Roar       = WutFace Roar
+Song of the Siren = FatSing
+
 # General
 @dota_play                = Dota sadKEK
 @DOTA_FindMatch           = Find Scrubs

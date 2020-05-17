@@ -1,0 +1,95 @@
+sequence-rgba 0
+frame plus.tga 1
+
+sequence-rgba 1
+frame minus.tga 1
+
+sequence-rgba 2
+frame sad.tga 1
+
+sequence-rgba 3
+frame arrow.tga 1
+
+sequence-rgba 4
+frame glasses.tga 1
+
+sequence-rgba 5
+frame miss.tga 1
+
+sequence-rgba 6
+frame evade.tga 1
+
+sequence-rgba 7
+frame deny.tga 1
+
+sequence-rgba 8
+frame medal.tga 1
+
+sequence-rgba 9
+frame blank_1.tga 1
+
+sequence-rgba 10
+frame 0.tga 1
+
+sequence-rgba 11
+frame 1.tga 1
+
+sequence-rgba 12
+frame 2.tga 1
+
+sequence-rgba 13
+frame 3.tga 1
+
+sequence-rgba 14
+frame 4.tga 1
+
+sequence-rgba 15
+frame 5.tga 1
+
+sequence-rgba 16
+frame 6.tga 1
+
+sequence-rgba 17
+frame 7.tga 1
+
+sequence-rgba 18
+frame 8.tga 1
+
+sequence-rgba 19
+frame 9.tga 1
+
+sequence-rgba 20
+frame elegiggle.tga 1
+
+sequence-rgba 21
+frame point_0.tga 1
+
+sequence-rgba 22
+frame real_medal.tga 1
+
+sequence-rgba 23
+frame drop.tga 1
+
+sequence-rgba 24
+frame zap.tga 1
+
+sequence-rgba 25
+frame death.tga 1
+
+sequence-rgba 26
+frame eye.tga 1
+
+sequence-rgba 27
+frame shield.tga 1
+
+sequence-rgba 28
+frame point_5.tga 1
+
+sequence-rgba 29
+frame question_mark.tga 1
+
+sequence-rgba 30
+frame question_mark_dark.tga 1
+
+sequence-rgba 31
+frame blank_2.tga 1
