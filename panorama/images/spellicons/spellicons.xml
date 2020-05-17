@@ -1,5 +1,6 @@
 <root>
   <Panel class="AddonLoadingRoot">
+      <Image id="gamemode" class="SeqImg" src="file://{images}/spellicons/beastmaster_primal_roar.png" />
       <Image id="gamemode" class="SeqImg" src="file://{images}/spellicons/earthshaker_echo_slam.png" />
       <Image id="gamemode" class="SeqImg" src="file://{images}/spellicons/naga_siren_song_of_the_siren.png" />
       <Image id="gamemode" class="SeqImg" src="file://{images}/spellicons/naga_siren_song_of_the_siren_cancel.png" />

@@ -25,6 +25,7 @@ Treant Protector       = Trent Protector of Minorities
 Death Ward        = ZULUL Ward
 Echo Slams        = Skadooshes
 Echo Slam         = Skadoosh
+Primal Roar       = WutFace Roar
 Song of the Siren = FatSing
 
 # General
