@@ -21,6 +21,9 @@ Ancient Apparition     = Ronnie Coleman
 Treant Protectors      = Trent Protector of Minorities # The roots and tendrils of the Treant Protectors are ...
 Treant Protector       = Trent Protector of Minorities
 
+# Abilities
+Song of the Siren = FatSing
+
 # General
 @dota_play                = Dota sadKEK
 @DOTA_FindMatch           = Find Scrubs

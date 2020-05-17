@@ -1,0 +1,6 @@
+<root>
+  <Panel class="AddonLoadingRoot">
+      <Image id="gamemode" class="SeqImg" src="file://{images}/spellicons/naga_siren_song_of_the_siren.png" />
+      <Image id="gamemode" class="SeqImg" src="file://{images}/spellicons/naga_siren_song_of_the_siren_cancel.png" />
+  </Panel>
+</root>
