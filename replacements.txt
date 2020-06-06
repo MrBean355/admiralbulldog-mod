@@ -93,10 +93,10 @@ Invulnerable              = Ungillable
 !China                 = MingLUL
 
 # Chat wheel
-!Frog           = Bruh
-!Crash          = Ohnonono
-!Crash and burn = Ohnonono PepeLaugh
-!Crybaby        = BabyRage
-!Kiss           = Fuck you
+!Frog                        = Bruh
+!Crash                       = Oh no no no
+!Crash and burn              = Oh no no no PepeLaugh
+!Crybaby                     = BabyRage
+!Kiss                        = Fuck ♂ you
 @dota_chatwheel_label_Stun   = STUN HIM!!!
 @dota_chatwheel_message_Stun = STUN HIM!!! WHAT ARE YOU DOING?! ARE YOU KIDDING ME?!
