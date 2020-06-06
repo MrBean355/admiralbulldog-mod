@@ -98,3 +98,5 @@ Invulnerable              = Ungillable
 !Crash and burn = Ohnonono PepeLaugh
 !Crybaby        = BabyRage
 !Kiss           = Fuck you
+@dota_chatwheel_label_Stun   = STUN HIM!!!
+@dota_chatwheel_message_Stun = STUN HIM!!! WHAT ARE YOU DOING?! ARE YOU KIDDING ME?!
