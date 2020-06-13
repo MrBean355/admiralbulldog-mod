@@ -29,7 +29,7 @@ object Publishing {
         }
 
         val git = Git(repo)
-        val status = git.status().call()
+        val status = git.status().addPath("compiled").call()
         if (status.isClean) {
             logger.info("No changes detected; done")
             return
