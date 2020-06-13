@@ -25,6 +25,7 @@ jobs:
 
       - name: Publish mod VPK
         env:
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
         run: |
           git fetch
