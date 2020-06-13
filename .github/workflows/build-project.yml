@@ -1,0 +1,15 @@
+name: Build project
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2.2.0
+
+      - name: Build project
+        run: |
+          chmod +x gradlew
+          ./gradlew clean jar
