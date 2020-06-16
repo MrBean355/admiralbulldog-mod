@@ -1,6 +1,6 @@
 package com.github.mrbean355.admiralbulldog.mod.util
 
-const val GITHUB_REPO = "admiralbulldog-mod-test"
+const val GITHUB_REPO = "admiralbulldog-mod"
 
 const val COMPILED_FILES = "compiled/pak01_dir"
 const val VPK_FILE = "pak01_dir.vpk"
