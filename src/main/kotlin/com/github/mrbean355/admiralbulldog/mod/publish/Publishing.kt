@@ -44,7 +44,7 @@ object Publishing {
         git.reset().call()
         git.add().addFilepattern("compiled").call()
         repo.config.apply {
-            setString("user", null, "name", "Mod Automation")
+            setString("user", null, "name", "Mike Johnston")
             setString("user", null, "email", emailAddress)
         }
         git.commit().setMessage("Pull in the latest Dota 2 strings").call()
