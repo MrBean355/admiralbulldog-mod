@@ -60,7 +60,9 @@ object Publishing {
 
             git.merge().include(repo.resolve("master")).setMessage("Merge branch 'master' into develop").call()
 
-            exec("git push --all")
+            exec("git push")
+            exec("git checkout master")
+            exec("git push")
             exec("git push --tags")
 
             Vpk.compile()
