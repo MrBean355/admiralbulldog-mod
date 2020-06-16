@@ -45,24 +45,29 @@ object Publishing {
         git.add().addFilepattern("compiled").call()
         repo.config.apply {
             setString("user", null, "name", "Mike Johnston")
-            setString("user", null, "email", emailAddress)
+            setString("user", null, "email", "mrbean355@gmail.com")
+            save()
         }
-        git.commit().setMessage("Pull in the latest Dota 2 strings").call()
+        try {
+            git.commit().setMessage("Pull in the latest Dota 2 strings").call()
 
-        val nextVersion = GitHub.getNextModVersion()
-        git.tag().setName("v$nextVersion").setMessage("Auto-release $nextVersion").call()
+            val nextVersion = GitHub.getNextModVersion()
+            git.tag().setName("v$nextVersion").setMessage("Auto-release $nextVersion").call()
 
-        git.checkout().setCreateBranch(true).setName("develop")
-                .setUpstreamMode(SET_UPSTREAM)
-                .setStartPoint("origin/develop").call()
+            git.checkout().setCreateBranch(true).setName("develop")
+                    .setUpstreamMode(SET_UPSTREAM)
+                    .setStartPoint("origin/develop").call()
 
-        git.merge().include(repo.resolve("master")).setMessage("Merge branch 'master' into develop").call()
+            git.merge().include(repo.resolve("master")).setMessage("Merge branch 'master' into develop").call()
 
-        exec("git push --all")
-        exec("git push --tags")
+            exec("git push --all")
+            exec("git push --tags")
 
-        Vpk.compile()
+            Vpk.compile()
 
-        GitHub.publishNewRelease(nextVersion, authToken)
+            GitHub.publishNewRelease(nextVersion, authToken)
+        } finally {
+            repo.config.clear()
+        }
     }
 }
