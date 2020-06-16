@@ -92,11 +92,20 @@ Invulnerable              = Ungillable
 !China UC 2            = MingLUL UC 2
 !China                 = MingLUL
 
-# Chat wheel
-!Frog                        = Bruh
-!Crash                       = Oh no no no
-!Crash and burn              = Oh no no no PepeLaugh
-!Crybaby                     = BabyRage
-!Kiss                        = Fuck ♂ you
-@dota_chatwheel_label_Stun   = STUN HIM!!!
-@dota_chatwheel_message_Stun = STUN HIM!!! WHAT ARE YOU DOING?! ARE YOU KIDDING ME?!
+# Chat wheel - text
+@dota_chatwheel_label_Stun              = STUN HIM!!!
+@dota_chatwheel_message_Stun            = STUN HIM!!! WHAT ARE YOU DOING?! ARE YOU KIDDING ME?! Are you kidding?!
+
+# Chat wheel - audio
+@dota_chatwheel_label_Frog              = Bruh
+@dota_chatwheel_message_Frog            = Bruh
+@dota_chatwheel_label_Crash_and_Burn    = Oh no no no
+@dota_chatwheel_message_Crash_and_Burn  = Oh no no no PepeLaugh
+@dota_chatwheel_label_Crybaby           = BabyRage
+@dota_chatwheel_message_Crybaby         = BabyRage
+@dota_chatwheel_label_Kiss              = Fuck you
+@dota_chatwheel_message_Kiss            = Fuck ♂ you
+@dota_chatwheel_label_Crowd_Groan       = Cover the exits
+@dota_chatwheel_message_Crowd_Groan     = Dude, cover the exits! Are you kidding me? Are you fucking kidding me?!
+@dota_chatwheel_label_Headshake         = STUN HIM!!!
+@dota_chatwheel_message_Headshake       = STUN HIM!!! WHAT ARE YOU DOING?! ARE YOU KIDDING ME?! Are you kidding?!
