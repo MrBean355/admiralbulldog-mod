@@ -3,7 +3,6 @@ package com.github.mrbean355.admiralbulldog.mod.publish
 import com.github.mrbean355.admiralbulldog.mod.compile.StringsFiles
 import com.github.mrbean355.admiralbulldog.mod.compile.Vpk
 import com.github.mrbean355.admiralbulldog.mod.util.exec
-import org.eclipse.jgit.api.CreateBranchCommand.SetupUpstreamMode.SET_UPSTREAM
 import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder
 import org.slf4j.LoggerFactory
@@ -54,9 +53,7 @@ object Publishing {
             val nextVersion = GitHub.getNextModVersion()
             git.tag().setName("v$nextVersion").setMessage("Auto-release $nextVersion").call()
 
-            git.checkout().setCreateBranch(true).setName("develop")
-                    .setUpstreamMode(SET_UPSTREAM)
-                    .setStartPoint("origin/develop").call()
+            exec("git checkout develop")
 
             git.merge().include(repo.resolve("master")).setMessage("Merge branch 'master' into develop").call()
 
