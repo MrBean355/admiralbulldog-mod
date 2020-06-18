@@ -2,7 +2,9 @@ package com.github.mrbean355.admiralbulldog.mod.publish
 
 import com.github.mrbean355.admiralbulldog.mod.compile.StringsFiles
 import com.github.mrbean355.admiralbulldog.mod.compile.Vpk
+import com.github.mrbean355.admiralbulldog.mod.telegram.Telegram
 import com.github.mrbean355.admiralbulldog.mod.util.exec
+import com.vdurmont.semver4j.Semver
 import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder
 import org.slf4j.LoggerFactory
@@ -65,8 +67,16 @@ object Publishing {
             Vpk.compile()
 
             GitHub.publishNewRelease(nextVersion, authToken)
+            sendTelegramNotification(nextVersion)
         } finally {
             repo.config.clear()
         }
+    }
+
+    private fun sendTelegramNotification(nextVersion: Semver) {
+        Telegram.sendChannelMessage("""
+            New mod update: <b>v${nextVersion}</b>
+            This update makes the mod compatible with the latest Dota 2 update.
+        """.trimIndent())
     }
 }
