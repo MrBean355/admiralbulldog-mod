@@ -27,6 +27,7 @@ jobs:
         env:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         run: |
           git fetch
           chmod +x gradlew
