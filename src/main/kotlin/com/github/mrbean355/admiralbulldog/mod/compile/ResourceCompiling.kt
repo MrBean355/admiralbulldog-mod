@@ -1,6 +1,9 @@
 package com.github.mrbean355.admiralbulldog.mod.compile
 
-import com.github.mrbean355.admiralbulldog.mod.util.*
+import com.github.mrbean355.admiralbulldog.mod.util.COMPILED_FILES
+import com.github.mrbean355.admiralbulldog.mod.util.COMPILER_OUTPUT
+import com.github.mrbean355.admiralbulldog.mod.util.RESOURCE_COMPILER
+import com.github.mrbean355.admiralbulldog.mod.util.exec
 import org.slf4j.LoggerFactory
 import java.io.File
 
@@ -27,6 +30,7 @@ object ResourceCompiling {
 
         // 1: Make text replacements
         StringsFiles.makeReplacements()
+        Emoticons.makeReplacements()
 
         // 2: Prepare images
         ImageManifest.generate(File(modPath))

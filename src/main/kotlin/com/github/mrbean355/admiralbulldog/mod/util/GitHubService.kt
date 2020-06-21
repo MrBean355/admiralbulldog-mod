@@ -15,6 +15,10 @@ interface GitHubService {
     @Streaming
     fun getStringsFile(@Path("fileName") fileName: String): Call<ResponseBody>
 
+    @GET("https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/emoticons.txt")
+    @Streaming
+    fun getEmoticonsFile(): Call<ResponseBody>
+
     @GET("https://api.github.com/repos/mrbean355/$GITHUB_REPO/releases/latest")
     fun getLatestRelease(): Call<LatestRelease>
 

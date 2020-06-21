@@ -1,5 +1,6 @@
 package com.github.mrbean355.admiralbulldog.mod.publish
 
+import com.github.mrbean355.admiralbulldog.mod.compile.Emoticons
 import com.github.mrbean355.admiralbulldog.mod.compile.StringsFiles
 import com.github.mrbean355.admiralbulldog.mod.compile.Vpk
 import com.github.mrbean355.admiralbulldog.mod.telegram.Telegram
@@ -23,6 +24,7 @@ object Publishing {
                 .build()
 
         StringsFiles.makeReplacements()
+        Emoticons.makeReplacements()
 
         if (repo.branch != "master") {
             logger.warn("On branch '${repo.branch}' instead of master; stopping")
