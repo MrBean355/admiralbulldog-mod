@@ -12,12 +12,14 @@ import retrofit2.http.Query
 
 object Telegram {
     private const val CHAT_ID = "@bulldog_sounds"
+    private val logger = LoggerFactory.getLogger(Telegram::class.java)
 
     fun sendChannelMessage(message: String) {
         if (TOKEN != null) {
-            INSTANCE.sendMessage(CHAT_ID, "html", message).execute()
+            val response = INSTANCE.sendMessage(CHAT_ID, "html", message).execute()
+            logger.info("Sent Telegram request, response: $response")
         } else {
-            LoggerFactory.getLogger(Telegram::class.java).info("$CHAT_ID: $message")
+            logger.info("$CHAT_ID: $message")
         }
     }
 
