@@ -103,7 +103,7 @@
 		"DOTA_CopyHeroBindsForCourier"	"Mirror Hotkeys from Hero Panel"
 		"DOTA_CopyHeroBindsForNeutrals"	"Mirror Hotkeys from Hero Panel"
 		"DOTA_CopyPlayerBinds"			"Mirror Hotkeys from Player Panel"
-		"DOTA_No_Courier"		"NO COURIER"	// A courier does not exist
+		"DOTA_No_Courier"		"NO COURIER"	// A courier does not exist comment
 		"DOTA_LocalPlayer"		"Local Player"
 		"DOTA_ViewAll"			"View All"
 		"DOTA_LearnMore"		"Learn More"
