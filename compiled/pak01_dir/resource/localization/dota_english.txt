@@ -885,7 +885,7 @@
 
 		"DOTA_AD_HeroCollision_PopupHeader" "Hero Double Picked"
 		"DOTA_AD_HeroCollision_PopupMessage" "Your hero was also chosen by the opposing team - please pick another one."
-
+		"DOTA_AD_HeroCollision_Generic_PopupMessage" "Your hero has already been chosen - please pick another one."
 
 		"DOTA_Chat_NewPlayerReminder"	"Please remember to be understanding and patient with newer players."
 		"dota_watch_totalprize"				"Total Prize Pool: $%s1 (Contributed: $%s3)"
@@ -2135,7 +2135,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"npc_dota_neutral_polar_furbolg_ursa_warrior"	"Hellbear Smasher"
 		"npc_dota_neutral_mud_golem"					"Mud Golem"
 		"npc_dota_neutral_mud_golem_split"				"Shard Golem"
-		"npc_dota_neutral_mud_golem_split_doom"				"Doom Shard"
+		"npc_dota_neutral_mud_golem_split_doom"			"%s1 Shard"
 		
 		"npc_dota_neutral_ogre_mauler"					"Ogre Bruiser"
 		"npc_dota_neutral_ogre_magi"					"Ogre Frostmage"
@@ -5156,7 +5156,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"game_mode_0_desc"											"-"
 		"game_mode_1_desc"											"Each player selects a hero from the entire hero pool."
 		"game_mode_2_desc"											"Each team is assigned a Captain, who makes all the hero selections for their team. Captains also ban heroes from the pool."
-		"game_mode_3_desc"											"Each team takes turns selecting a hero from a shared pool of 50 random heroes."
+		"game_mode_3_desc"											"Each team takes turns selecting a hero from a shared pool of 33 random heroes."
 		"game_mode_4_desc"											"Each player selects a hero from a set of three heroes randomly chosen for them."
 		"game_mode_5_desc"											"Each player is randomly assigned a hero."
 		"game_mode_6_desc"											"-"
@@ -22751,6 +22751,7 @@ Special Techies Taunt"
 
 	"dota_play"									"Dota sadKEK"
 	"dota_play_searching"						"Finding Scrubs"
+    "dota_play_searching_server"                "Confirming Match"
 	"dota_play_host_loading"					"Host Loading..."
 	"dota_play_connecting_to_server"			"Connecting..."
 	"dota_play_lobby_find_server"				"Finding Server"
@@ -22767,6 +22768,9 @@ Special Techies Taunt"
 	"dota_leaver_view_tooltip"					"View Details"
 	"dota_waiting_for_match_ready"				"Accepted ( {d:ready_up_accepted} / {d:ready_up_total} )"
 	"dota_play_returning_to_queue"				"Returning to Queue"
+
+    "dota_cancel_confirming_match_title"        "Match Is Being Created"
+    "dota_cancel_confirming_match_body"         "Leaving the matchmaking queue right now may prevent you from matchmaking for a period of time.  Are you sure?"
 
 	"dota_play_custom_game_desc"				"Fight your way through hordes of enemies and other players as one of 8 teams of 3 players. Earn Battle Points by finding treasure or being the last team remaining!"
 
@@ -23252,6 +23256,7 @@ Special Techies Taunt"
 	"dota_settings_help_tips_reset_success_title"	"Help Tips Reset"
 	"dota_settings_help_tips_reset_success_text"	"Previously dismissed Help Tips have been reset and will show again."
 	"dota_settings_plus_use_assistant"			"Use Plus Assistant rather than the default guides"
+	"dota_settings_turbo_courier_default_auto_deliver"	"Auto-deliver ON by default in Turbo games."
 	"dota_settings_chat_filter_onlyfriends"		"Only show chat from friends, party, and guild"
 	"dota_settings_text_filter_filtered"		"Enable text filtering"
 	"dota_settings_chat_filter"					"Allowed Chat"
@@ -23360,6 +23365,7 @@ Special Techies Taunt"
 	"DOTA_Settings_Tooltip_AutoRepeatRightMouse"		"When holding down the right mouse button, right click repeatedly."
 	"DOTA_Settings_Tooltip_ShopSearchFocusOnOpen"		"When enabled, opening the shop will immediately clear and give focus to the Search box."
 	"DOTA_Settings_Tooltip_PlusUseAssistant"			"When enabled, Plus Assistant will be used by rather than the default guides."
+	"DOTA_Settings_Tooltip_TurboAutoCourier"			"Turbo: When enabled, courier will deliver items automatically by default. You can still toggle this ON/OFF during the game."
 
 	"DOTA_Settings_Tooltip_BroadcastChannelChat"	"By default, display messages received from one channel in all other channel tabs."
 	"DOTA_Settings_Tooltip_ALTHero"				"Draw a green arrow over your Hero when ALT is held down."
@@ -24748,6 +24754,7 @@ Special Techies Taunt"
 	"DOTA_Credits_WarlockGolem_Extra"	"& Warlock's Golem"
 	"DOTA_Credits_Juggernaut_Bladeform"	"as The Call of the Bladeform Legacy"
 	"DOTA_Credits_KidInvoker"			"as Kid Invoker"
+	"DOTA_Credits_DiscipleWei"			"as The Disciple Wei"
 
 	"DOTA_Trading_UI_Body_Outgoing" "Waiting for {s:player_name} to respond to your request..."
 
@@ -29407,6 +29414,7 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 
 	"DOTA_SplashAd_TI10_Weekend_Battle_Bundle" "Battle Level Bundle"
 	"DOTA_SplashAd_TI10_Weekend_Sale_Title" "Available until June 28th"
+	"DOTA_SplashAd_TI10_Weekend_Sale_Title2" "Now Available until July 2nd"
 	"DOTA_SplashAd_TI10_Weekend_Sale_Purchase_Btn" "Purchase Bundle"
 	"DOTA_SplashAd_TI10_Weekend_Sale_Purchase_Limit_Expanded" "Purchase up to <span class='BundleAmount'>two bundles</span> per customer"
 	"DOTA_SplashAd_TI10_Weekend_Sale_75Percent" "Save 75%"
@@ -29415,6 +29423,7 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 	"DOTA_SplashAd_TI10_Weekend_Sale_Purchase_Status" "{d:purchased_count} / {d:max_allowed_count} Bundles Purchased"
 	"DOTA_SplashAd_TI10_Weekend_Sale_Purchase_Message1" "You may still purchase 1 more bundle"
 	"DOTA_SplashAd_TI10_Weekend_Sale_Purchase_Message2" "Bundle limit reached"
+
 
 	"DOTA_SplashAd_TI6_LuckvaseAndCarafe_Autographs_Title" "Autographed Treasures Now Available"
 	"DOTA_SplashAd_TI6_LuckvaseAndCarafe_Autographs_Message" "Support your favorite <a href=\"event:UIPopupButtonClicked( DOTAShowCompManila2016CastersPage() )\">broadcast talent from The International 2016</a>!"
@@ -30445,7 +30454,7 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 	"DOTA_HUD_PlusChallenge"					"CHALLENGES"
 
 	"DOTA_TalentPickRate_Help_Tooltip" 	"Pick rates are shown as grey bars behind the talent names on the left. The percentage on the right indicates how much higher the win rate is using that talent."
-	"DOTA_LastUpdated_Help_Tooltip"	"Talent stats, Average K/D/A, NW, and LH/DN Data are calculated from the 48 hours of matches prior to the \"Last Updated\" date and time."
+	"DOTA_LastUpdated_Help_Tooltip"	"Talent stats, Average K/D/A, NW, and LH/DN Data are calculated from the 4 days of matches prior to the \"Last Updated\" date and time."
 
 	"DOTA_KillGraph_DamageExplanation" "<span class=\"PhysicalDamageLabel\">Physical damage</span> is caused by attacks and some abilities. Reduced by Armor.<br><br><span class=\"MagicalDamageLabel\">Magical damage</span> is caused by abilities and items. Reduced by Magic Resistance.<br><br><span class=\"PureDamageLabel\">Pure damage</span> is caused by a few abilities. Pure damage is not reduced."
 
@@ -31589,6 +31598,26 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 	"Debut_Arcana_QueenOfPain_Feature_6_Title" 						"<span class='bullettitle'>Unlockable Second Style</span>"
 	"Debut_Arcana_QueenOfPain_Feature_6_Desc" 						"Torment 1000 enemies with Sonic Wave in victories to unlock the <i>Royal Decree</i> alternate style."
 
+	// ANTI-MAGE PERSONA
+	
+	"Debut_AM_Wei_Persona_Level"								"Battle Pass Level 305 Reward"
+	"Debut_AM_Wei_Persona_Title"								"The Disciple's Path"
+	"Debut_AM_Wei_Persona_Subtitle"								"New Persona for Anti-Mage"
+	
+	"Debut_AM_Wei_Persona_Intro" 								"New Persona for Anti-Mage" 
+	"Debut_AM_Wei_Persona_Lore"									"From the ashes of a fallen faith, the time has come to witness a new lineage rise. Trained in the lost ways of the Turstarkuri by her adopted mentor the Anti-Mage, the disciple Wei has been called upon to put her years of practice to the final test. Now she must leave the confines of the temple—to cast off the horrors of the past and find out if she's truly ready to face the world of magic and bring the wizards of these realms to their vile knees."
+	
+	"Debut_AM_Wei_Persona_Feature_1_Title" 						"<span class='bullettitle'>All-new Model</span>"
+	"Debut_AM_Wei_Persona_Feature_1_Desc" 						"This Persona completely replaces the original model and character for Anti-Mage with his young disciple, Wei, who begins her own journey to rid the world of magic."
+
+	"Debut_AM_Wei_Persona_Feature_2_Title" 						"<span class='bullettitle'>Custom Animations</span>"
+	"Debut_AM_Wei_Persona_Feature_2_Desc" 						"Wei is a loyal disciple, but her journey is her own. She has a completely new set of animations to help show the more arcane-indulgent creatures of the world that their time on this plane grows short."
+
+	"Debut_AM_Wei_Persona_Feature_3_Title" 						"<span class='bullettitle'>Custom Hero Assets</span>"
+	"Debut_AM_Wei_Persona_Feature_3_Desc" 						"Includes an all-new Hero Portrait, Topbar Portrait, and a Minimap Icon."
+
+	"Debut_AM_Wei_Persona_Feature_4_Title" 						"<span class='bullettitle'>900+ new Persona-exclusive voice lines</span>"
+	"Debut_AM_Wei_Persona_Feature_4_Desc" 						"Wei has a completely new voice performance with over 900 lines of dialogue."
 
 
 	//CAVERN CRAWL SET STYLES
@@ -32786,6 +32815,9 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 	"DOTA_TI9_Collectors_Cache2_Title"					"2019 Collector's Cache II"
 	"DOTA_TI9_Collectors_Cache2_Desc"					"16 exclusive hero sets available for a limited time. Open treasures to earn up to 32 Battle Levels."
 
+	"DOTA_TI10_Collectors_Cache_Title"					"TI10 Collector's Cache"
+	"DOTA_TI10_Collectors_Cache_Desc"					"18 new hero sets as decided by community vote. Open treasures to earn up to 36 Battle Pass levels."
+
 	"DOTA_Collectors_Cache_Vote_Title"					"Collector's Cache Vote"
 	"DOTA_Collectors_Cache_Vote_Desc"					"Vote on your favorite sets to help choose which entries make it into this year's collection."
 	"DOTA_Collectors_Cache_Vote_Loading"				"Loading Vote Information..."
@@ -32802,6 +32834,33 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 	"DOTA_Collectors_Cache_Vote_Upvoted"				"You liked this set!"
 	"DOTA_Collectors_Cache_Vote_Downvoted"				"You didn't like this set."
 	"DOTA_Collectors_Cache_Vote_Learn"					"Vote now"
+
+	"DOTA_TI10_Collectors_Cache_Loading"				"Loading Information..."
+	"DOTA_TI10_Collectors_Cache_Remaining"				"Remaining to purchase"
+	"DOTA_TI10_Collectors_Cache_Finished"				"Purchase period ended"
+	"DOTA_TI10_Collectors_Cache_TimeRemaining"			"{t:d:t:T:countdown_time} remaining to vote"
+	"DOTA_TI10_Collectors_Cache_PageTitle"				"2020 Collector's Cache"
+	"DOTA_TI10_Collectors_Cache_BadgeLabel"				"Earn up to"
+	"DOTA_TI10_Collectors_Cache_Badge36"				"36"
+	"DOTA_TI10_Collectors_Cache_Badge31"				"32"
+	"DOTA_TI10_Collectors_Cache_BadgeLevels"			"Levels"
+
+	"DOTA_SplashAd_TI10_CollectorsCache_SubTitle" 			"Now Available"
+	"DOTA_SplashAd_TI10_CollectorsCache_Title" 			"The International 2020 Collector's Cache"
+	"DOTA_SplashAd_TI10_CollectorsCache_Exclusive_Header" 	"Exclusive Treasure"
+	"DOTA_SplashAd_TI10_CollectorsCache_Exclusive_Text" 	"Available now for a limited time, the Collector's Cache features 15 exclusive item sets and the chance for 3 bonus rare item sets."
+	"DOTA_SplashAd_TI10_CollectorsCache_Alt_Header" 		"Earn up to 36 Battle Levels"
+	"DOTA_SplashAd_TI10_CollectorsCache_Alt_Text" 			"Open 1, 8, and 15 treasures for bonus rewards."
+
+	"DOTA_TI10_CollectorsCache_HeaderText"				"Earn 36 Bonus Battle Pass Levels"
+	"DOTA_TI10_CollectorsCache_FooterText"				"Cache items are exclusive and will not be available for purchase elsewhere after The International."
+	"DOTA_TI10_CollectorsCache_SubText"					"Open treasures to earn up to <span class=\"levels\">36 Battle Pass Levels.</span>"
+	"DOTA_TI10_CollectorsCache_PointsRemaining"			"Battle points earned"
+	"DOTA_TI10_CollectorsCache_Treasure_1"				"1 Treasure"
+	"DOTA_TI10_CollectorsCache_Treasure_2"				"8 Treasures"
+	"DOTA_TI10_CollectorsCache_Treasure_3"				"15 Treasures"
+
+	"DOTA_EconItemSet_Tooltip_Exclusive_TI10_Collectors_Cache" 	"Cache items are only available for 30 days after initial release, and then will never be available afterwards."
 
 	"DOTA_VersusScreen_Loading"							"Loading Versus Screen"
 
@@ -33413,7 +33472,13 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 
 	"DOTA_ActivateGauntletTicket_InProgress_Title"	"Activating Gauntlet Ticket"
 	"DOTA_ActivateGauntletTicket_InProgress_Text"	"Activating this Gauntlet Ticket on your account."
+	
+	"dota_settings_anonymous_mode"	"Anonymous Mode"
+	"dota_anonymous"		"Anonymous"
+	"DOTA_Settings_Tooltip_AnonymousMode"	"When on, you won't see avatars, nicknames or ingame chat messages from people you aren't friends with. Additionally, you will see not guild information from guilds that you don't belong to."
+	"DOTA_GuildSearch_AnonymousMode_header"	"Current in Anonymous Mode"
+	"DOTA_GuildSearch_AnonymousMode_body"	"You are currently in anonymous mode and are about to search for guilds which will show avatars, guild names, and guild tags from users who you are not friends with.  Do you still wish to proceed?"
+	"DOTA_GuildSearch_AnonymousMode_error"	"Anonymous mode is active.  No results will be displayed."
 
 	}
 }
-
