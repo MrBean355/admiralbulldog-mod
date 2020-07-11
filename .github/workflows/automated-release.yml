@@ -32,3 +32,8 @@ jobs:
           git fetch
           chmod +x gradlew
           ./gradlew clean run --args=publish
+          
+      - name: Upload VPK
+        uses: actions/upload-artifact@v2
+        with:
+          path: pak01_dir.vpk*
