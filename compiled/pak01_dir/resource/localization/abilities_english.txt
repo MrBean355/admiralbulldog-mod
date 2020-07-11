@@ -3,7 +3,7 @@
 	"Language" "English" 
 	"Tokens" 
 	{
-		// To create a new key ( like $health ) just add the entry here
+		// To create a new key ( like $health ) just add the entry here comment
 		"dota_ability_variable_health"			"Health"					// $health
 		"dota_ability_variable_mana"			"Mana"						// $mana
 		"dota_ability_variable_armor"			"Armor"						// $armor
