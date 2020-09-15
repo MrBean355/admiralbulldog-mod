@@ -27,10 +27,10 @@ object ImageManifest {
 
         val xml = buildString {
             append("<root>\n")
-            append("  <Panel class=\"AddonLoadingRoot\">\n")
+            append("  <Panel>\n")
             allFiles.forEach {
                 check(it.endsWith(SUPPORTED_FILE_TYPE)) { "Unsupported file type: $it" }
-                append("    <Image id=\"gamemode\" class=\"SeqImg\" src=\"file://{images}/$it\" />\n")
+                append("    <Image src=\"file://{images}/$it\" />\n")
             }
             append("  </Panel>\n")
             append("</root>\n")
