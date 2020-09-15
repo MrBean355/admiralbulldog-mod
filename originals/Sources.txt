@@ -10,4 +10,6 @@ Naga Siren Ult      - https://youtu.be/8Rq0Gg6PEac?t=169
 Queen of Pain Ult   - https://youtu.be/OlOy9zjIdmc?t=26
 Witch Doctor Ult    - default sound + https://youtu.be/HmZYgqBp1gI
 
+High 5              - https://youtu.be/MCapEm8Nu7c?t=93
+
 PlaySounds page: https://chatbot.admiralbulldog.live/playsounds
