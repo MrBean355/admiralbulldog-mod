@@ -46,7 +46,7 @@ object Emoticons {
                     }
                 }
             }
-            output.appendln(newLine)
+            output.appendLine(newLine)
         }
 
         if (toReplace.isNotEmpty()) {
