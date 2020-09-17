@@ -54,6 +54,9 @@ object Publishing {
         try {
             git.commit().setMessage("Pull in the latest Dota 2 strings").call()
 
+            // Revert any other local changes:
+            exec("git checkout .")
+
             val nextVersion = GitHub.getNextModVersion()
             git.tag().setName("v$nextVersion").setMessage("Auto-release $nextVersion").call()
 
