@@ -10,7 +10,8 @@ import java.io.File
 private val RESOURCES_TO_COMPILE: Set<String> = setOf("sounds", "panorama", "materials")
 private val FILE_RENAMES: Map<String, String> = mapOf(
         "panorama/images/hud/reborn/statbranch_button_bg_png.vtex_c" to "panorama/images/hud/reborn/statbranch_button_bg_psd.vtex_c",
-        "panorama/images/textures/startup_background_logo_png.vtex_c" to "panorama/images/textures/startup_background_logo_psd.vtex_c"
+        "panorama/images/textures/startup_background_logo_png.vtex_c" to "panorama/images/textures/startup_background_logo_psd.vtex_c",
+        "panorama/images/pings/ping_world_png.vtex_c" to "panorama/images/pings/ping_world_psd.vtex_c"
 )
 
 object ResourceCompiling {
