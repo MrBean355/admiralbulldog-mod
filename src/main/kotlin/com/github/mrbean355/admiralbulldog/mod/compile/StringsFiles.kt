@@ -1,12 +1,12 @@
 package com.github.mrbean355.admiralbulldog.mod.compile
 
-import com.github.mrbean355.admiralbulldog.mod.util.STRINGS_FILES
 import com.github.mrbean355.admiralbulldog.mod.util.GitHubService
+import com.github.mrbean355.admiralbulldog.mod.util.STRINGS_FILES
 import org.slf4j.LoggerFactory
 import java.io.File
 
 /** Which files to replace text in. */
-private val TARGET_FILES = listOf("abilities_english.txt", "dota_english.txt")
+private val TARGET_FILES = listOf("abilities_english.txt", "dota_english.txt", "hero_chat_wheel_english.txt")
 
 /**
  * Downloads the latest applicable strings files and makes the replacements.

@@ -109,3 +109,7 @@ Invulnerable              = Ungillable
 @dota_chatwheel_message_Crowd_Groan     = Dude, cover the exits! Are you kidding me? Are you fucking kidding me?!
 @dota_chatwheel_label_Headshake         = STUN HIM!!!
 @dota_chatwheel_message_Headshake       = STUN HIM!!! WHAT ARE YOU DOING?! ARE YOU KIDDING ME?! Are you kidding?!
+
+# Chat wheel - heroes
+@dota_chatwheel_message_weaver_thank    = Ronnie Coleman here I come!
+@dota_chatwheel_label_weaver_thank      = Ronnie Bruh
