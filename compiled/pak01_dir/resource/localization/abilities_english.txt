@@ -1305,8 +1305,6 @@
 		"DOTA_Tooltip_ability_axe_battle_hunger_slow"									"%MOVEMENT SLOW:"
 		"DOTA_Tooltip_ability_axe_battle_hunger_speed_bonus"							"%SPEED BONUS:"
 		"DOTA_Tooltip_ability_axe_battle_hunger_damage_per_second"						"DAMAGE PER SECOND:"
-		"DOTA_Tooltip_ability_axe_battle_hunger_damage_reduction_scepter"				"%SCEPTER DAMAGE REDUCTION:"
-		"DOTA_Tooltip_ability_axe_battle_hunger_scepter_range"				            "SCEPTER AOE:"
 		"DOTA_Tooltip_ability_axe_counter_helix"										"Counter Helix"
 		"DOTA_Tooltip_ability_axe_counter_helix_Description"							"When attacked, Axe has a chance to perform a helix counter attack, dealing pure damage to all nearby enemies."
 		"DOTA_Tooltip_ability_axe_counter_helix_shard_description"                      "Causes Axe's attacks to have a chance to proc a Counter Helix. Attack procs ignore Counter Helix cooldown. Increases attack speed by 20."
@@ -3025,7 +3023,7 @@
 		"DOTA_Tooltip_ability_enchantress_impetus_Note1"								"Distance to target is measured when the projectile hits."
 		"DOTA_Tooltip_ability_enchantress_impetus_distance_damage_pct"					"%DISTANCE DAMAGE:"
 		"DOTA_Tooltip_ability_enchantress_bunny_hop"									"Sproink"
-		"DOTA_Tooltip_ability_enchantress_bunny_hop_Description"						"Leaps backward, dodges incoming projectiles, and launches an Impetus attack on the 3 furthest enemy units within Enchantress' attack range + 200. Grants 40%% movement speed for 2 seconds."
+		"DOTA_Tooltip_ability_enchantress_bunny_hop_Description"						"Leaps backward, dodges incoming projectiles, and launches an Impetus attack on the 3 furthest enemy units within Enchantress' attack range + 200."
 		"DOTA_Tooltip_ability_enchantress_bunny_hop_Lore"							    "Sproink is as Sproink does."
 		"DOTA_Tooltip_ability_enchantress_bunny_hop_hop_distance"						"DISTANCE:"
 		
