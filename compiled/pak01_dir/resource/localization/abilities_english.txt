@@ -5140,8 +5140,6 @@
 		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_Note2"				"The area of the song follows Naga, so if she moves far enough away from affected units, they will wake up."
 		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_duration"			"DURATION:"
 		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_radius"				"RADIUS:"
-		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_regen_rate_tooltip_scepter" "%SCEPTER HEALTH REGEN:"
-		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_scepter_cooldown" "SCEPTER COOLDOWN:"
 		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_cancel"				"FatSing End"
 		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_cancel_Description"	"Release enemy units from your song so they can be targeted again."
 		
@@ -6362,7 +6360,7 @@
 		"DOTA_Tooltip_ability_terrorblade_terror_wave_scepter_radius"					"RADIUS:"
 
 		"DOTA_Tooltip_ability_terrorblade_demon_zeal"									"Demon Zeal"
-		"DOTA_Tooltip_ability_terrorblade_demon_zeal_Description"              "Costs %health_cost_pct%%% of Terrorblade's Current HP to cast, providing him +%berserk_bonus_movement_speed%%% Movement and +%berserk_bonus_attack_speed%%% Attack Speed for %duration% seconds. Provides %melee_bonus%%% more bonus while melee. Cooldown: 14. "
+		"DOTA_Tooltip_ability_terrorblade_demon_zeal_Description"              "Costs %health_cost_pct%%% of Terrorblade's Current HP to cast, providing him +%berserk_bonus_movement_speed% Movement and +%berserk_bonus_attack_speed%%% Attack Speed for %duration% seconds. Provides %melee_bonus%%% more bonus while melee. Cooldown: 14. "
 
 		"DOTA_Tooltip_modifier_terrorblade_reflection_slow"					"Reflection"
 		"DOTA_Tooltip_modifier_terrorblade_reflection_slow_Description"		"Movement speed reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, and being attacked by Terrorblade's reflection."
