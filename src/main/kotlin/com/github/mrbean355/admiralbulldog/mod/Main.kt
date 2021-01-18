@@ -1,24 +1,18 @@
 package com.github.mrbean355.admiralbulldog.mod
 
-import ch.qos.logback.classic.Level
-import ch.qos.logback.classic.Logger
-import com.github.mrbean355.admiralbulldog.mod.compile.ResourceCompiling
-import com.github.mrbean355.admiralbulldog.mod.publish.Publishing
+import com.github.mrbean355.admiralbulldog.mod.compile.Vpk
+import com.github.mrbean355.admiralbulldog.mod.util.COMPILED_FILES
 import com.github.mrbean355.admiralbulldog.mod.util.ProgramArgs
-import com.github.mrbean355.admiralbulldog.mod.util.ProgramArgs.Mode.COMPILE
-import com.github.mrbean355.admiralbulldog.mod.util.ProgramArgs.Mode.PUBLISH
-import org.slf4j.LoggerFactory
+import java.io.File
 
 fun main(args: Array<String>) {
-    setUp()
     val programArgs = ProgramArgs.from(args)
-    when (programArgs.getMode()) {
-        COMPILE -> ResourceCompiling.compileResources(programArgs.getDotaRootDirectory(), programArgs.getModDirectory(), programArgs.getModDestinationDirectory())
-        PUBLISH -> Publishing.run(programArgs.getEmailAddress(), programArgs.getAuthToken())
-    }
-}
+    require(programArgs.getMode() == ProgramArgs.Mode.COMPILE)
 
-private fun setUp() {
-    val logger = LoggerFactory.getLogger("org.eclipse.jgit.internal.storage.file.FileSnapshot") as? Logger
-    logger?.level = Level.OFF
+    File(COMPILED_FILES).apply {
+        deleteRecursively()
+        mkdirs()
+    }
+
+    Vpk.compileAndInstall(programArgs.getModDestinationDirectory())
 }
