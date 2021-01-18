@@ -2,9 +2,8 @@ name: Automated release
 
 on:
   push:
-    branches: [ master ]
-  schedule:
-    - cron: '0 */3 * * *'
+    branches-ignore:
+      - '**'
 
 jobs:
   build:
