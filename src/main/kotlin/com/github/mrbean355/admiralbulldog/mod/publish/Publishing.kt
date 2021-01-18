@@ -60,12 +60,14 @@ object Publishing {
             val nextVersion = GitHub.getNextModVersion()
             git.tag().setName("v$nextVersion").setMessage("Auto-release $nextVersion").call()
 
-            exec("git checkout develop")
+            // Don't pull changes into develop.
+            // It's changed a lot so there's nothing to merge into.
 
-            git.merge().include(repo.resolve("master")).setMessage("Merge branch 'master' into develop").call()
+            // exec("git checkout develop")
+            // git.merge().include(repo.resolve("master")).setMessage("Merge branch 'master' into develop").call()
+            // exec("git push")
+            // exec("git checkout master")
 
-            exec("git push")
-            exec("git checkout master")
             exec("git push")
             exec("git push --tags")
 
